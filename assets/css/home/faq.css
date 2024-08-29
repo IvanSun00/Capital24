@@ -1,0 +1,42 @@
+.faq {
+  min-height: 100vh;
+  margin-top: 5vh;
+  padding-top: 10vh;
+}
+
+.accordion {
+  width: 80vw;
+  margin: 0 auto;
+  --bs-accordion-border-color: #eeedf0;
+  --bs-accordion-active-color: black;
+  --bs-accordion-active-bg: #d3cee0;
+  --bs-accordion-btn-focus-border-color: none;
+  --bs-accordion-btn-focus-box-shadow: 0;
+}
+
+.accordion-item {
+  border-radius: 20px !important;
+  border-bottom: 0;
+}
+
+.accordion-button {
+  background-color: #eeedf0;
+  margin-top: 5vh;
+  border-radius: 20px !important;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.8);
+  font-weight: 600;
+}
+
+.accordion-button:focus {
+  border-color: #eeedf0;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.8);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #d3cee0;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.8);
+}
+
+.accordion-body {
+  border-radius: 20px !important;
+}

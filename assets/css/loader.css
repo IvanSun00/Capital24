@@ -1,0 +1,26 @@
+.loader-container {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100% !important;
+  height: 100% !important;
+  background-color: rgba(0, 0, 0, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+}
+
+.loader {
+  height: 150px;
+  width: 50%;
+  text-align: center;
+  padding: 1em;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#loading_svg path,
+#loading_svg rect {
+  fill: #726691;
+}

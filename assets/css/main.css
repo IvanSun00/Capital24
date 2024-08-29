@@ -1,0 +1,272 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-item a {
+  font-weight: 600 !important;
+  color: floralwhite;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #151221;
+  background: linear-gradient(
+    180deg,
+    #151221 0%,
+    rgba(126, 126, 194, 1) 49%,
+    rgba(237, 214, 235, 1) 100%
+  );
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #151221;
+}
+
+#navbar {
+  transition: background-color 0.3s ease-in-out;
+  transition: text-decoration 0.5s ease-in-out;
+}
+
+#navbar {
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.img_logo {
+  width: 40px;
+}
+
+.navbar-custom {
+  height: 80px;
+  padding: 0 5vh !important;
+}
+
+.navbar-custom .navbar-toggler {
+  border: 2px solid white;
+}
+
+.navbar-custom .navbar-toggler span {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-custom .navbar-nav .nav-item {
+  margin: 0 6px;
+}
+
+@keyframes slideUnderline {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.navbar-custom .navbar-nav .nav-item .nav-link {
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  top: 0;
+  overflow: hidden;
+  color: floralwhite !important;
+}
+
+.navbar-custom .navbar-nav .nav-item .nav-link:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+}
+
+.navbar-custom .navbar-nav .nav-item .nav-link:hover:after {
+  width: 100%;
+  margin-left: 0;
+  animation: slideUnderline 0.3s ease-in-out;
+}
+
+.nav-item {
+  transition: 0.3s linear;
+}
+
+.navbar-custom .navbar-nav .nav-item .nav-link.active {
+  background-color: #726691;
+  color: floralwhite;
+}
+
+.navbar-custom .navbar-brand .img_logo {
+  width: 3.2em;
+  height: 3.2em;
+}
+
+.p-container {
+  padding: 0.5rem !important;
+}
+
+@media screen and (max-width: 1150px) {
+  .navbar-custom .navbar-nav .nav-item .nav-link {
+    padding: 7px;
+  }
+}
+
+@media screen and (max-width: 991.9px) {
+  .navbar-custom {
+    padding: 1vh 2vh !important;
+  }
+  .navbar-custom .navbar-brand .img_logo {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 3em;
+    height: 3em;
+  }
+
+  .navbar-toggler-icon {
+    width: 1.2em;
+    height: 1.2em;
+  }
+
+  .navbar-custom .navbar-nav .nav-item .nav-link.active {
+    background-color: transparent;
+    color: white;
+  }
+
+  .navbar-custom .navbar-collapse {
+    margin-top: 30px;
+    background-color: #171524;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px rgba(255,255,255,0.4);
+  }
+
+  .navbar-custom .navbar-toggler:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  .navbar-custom .navbar-nav .nav-item .nav-link {
+    padding: 5px;
+    text-align: center;
+  }
+
+  .navbar-custom .navbar-nav .nav-item .nav-link:after {
+    height: 0;
+    background-color: transparent;
+  }
+
+  .navbar-custom .navbar-nav .nav-item .nav-link:hover:after {
+    animation: none;
+  }
+
+  .p-container {
+    padding: 0rem 0.5rem !important;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden !important;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "font-utama";
+  src: url("../../assets/font/Toreadore.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "subfont";
+  src: url("../../assets/font/zrnicrg.otf") format("truetype");
+}
+
+section {
+  padding: 3vh;
+}
+
+.header {
+  font-size: 10rem;
+  font-family: "font-utama";
+}
+
+.headers {
+  font-size: 7rem;
+  font-family: "font-utama";
+}
+
+.header1 {
+  font-size: 5rem;
+  font-family: "font-utama";
+}
+
+.header2 {
+  font-size: 4rem;
+  font-family: "font-utama";
+}
+
+.header3 {
+  font-size: 2rem;
+  font-family: "font-utama";
+}
+
+.text1 {
+  font-size: 1.5rem;
+  font-family: "subfont";
+}
+
+.text2 {
+  font-size: 1rem;
+  font-family: "subfont";
+}
+
+.text-shadow {
+  text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (max-width: 768px) {
+  .header,
+  .headers {
+    font-size: 5rem;
+  }
+
+  .header1 {
+    font-size: 3rem;
+  }
+
+  .header2 {
+    font-size: 2rem;
+  }
+
+  .header3 {
+    font-size: 1rem;
+  }
+
+  .text1 {
+    font-size: 0.9rem;
+  }
+
+  .text2 {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .header,
+  .headers {
+    font-size: 4rem;
+  }
+}

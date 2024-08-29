@@ -1,0 +1,6 @@
+klo mau nyoba pke email sg elizabethceline04@gmail.com
+sm sblm coba dek terminal ketik: "composer require google/apiclient"
+
+to do:
+- kurang querry gae ngecek nrp
+

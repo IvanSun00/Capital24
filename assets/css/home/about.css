@@ -1,0 +1,60 @@
+.aboutUs {
+    min-height: 50vh;
+}
+
+.box-about {
+    margin: 10vh auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80vw;
+}
+
+.box-about .left {
+    display: flex;
+    justify-content: center;
+}
+
+
+.box-about .right {
+    padding: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left !important;
+}
+
+.wudii-about {
+    width: 400px;
+    margin-bottom: 100px;
+}
+
+@media screen and (max-width: 1024px) {
+    .box-about {
+        margin: 0 auto;
+        flex-direction: column;
+        width: 85vw;
+    }
+
+    .wudii-about {
+        width: 600px;
+        margin-bottom: 0;
+    }
+    
+    .box-about .right {
+        margin-top: 0;
+        text-align: center !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wudii-about {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .wudii-about {
+        width: 250px;
+    }
+}

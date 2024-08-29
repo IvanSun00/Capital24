@@ -1,0 +1,183 @@
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../img/bg_fix.PNG);
+  background-size: cover;
+  font-family: "font-utama";
+  overflow-x: hidden;
+}
+
+.container {
+  background-color: white;
+  border: none;
+  padding: 0;
+  border-radius: 15px;
+  margin-bottom: 10vh;
+}
+input {
+  font-family: "subfont";
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  background-color: #e4e4e4 !important;
+  outline: 0 !important;
+  border: 1px solid #e4e4e4 !important;
+  letter-spacing: 1px;
+}
+select {
+  font-family: "subfont";
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  background-color: #e4e4e4 !important;
+  outline: 0 !important;
+  border: 1px solid #e4e4e4 !important;
+}
+.img-container {
+  width: 100%;
+  margin-top: 5vh;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+img {
+  width: 500px;
+}
+
+.regist-close {
+  font-size: 5rem;
+}
+
+@media (max-width: 1024px) {
+  body {
+    background-size: 100% 100vh;
+    background-attachment: fixed;
+  }
+  .container {
+    border-radius: 9px;
+    width: 93vw !important;
+    margin-bottom: 10vh;
+  }
+  img {
+    max-width: 90% !important;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .regist-close {
+    font-size: 3rem;
+  }
+}
+.btn-success {
+  --bs-btn-bg: #584882 !important;
+  --bs-btn-border-color: #584882 !important;
+  --bs-btn-hover-bg: #726691;
+  --bs-btn-hover-border-color: #726691;
+  --bs-btn-active-bg: #726691;
+  --bs-btn-active-border-color: #726691;
+  --bs-btn-disabled-bg: #584882 !important;
+  --bs-btn-disabled-border-color: #584882 !important;
+}
+
+.btn-logout {
+  z-index: 15;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  left: 3vw;
+  top: 2vh;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  overflow: hidden;
+  transition-duration: 0.3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.399);
+  background-color: #ffdd2d;
+  font-family: "subfont";
+  letter-spacing: 2px;
+}
+.sign-logout {
+  width: 100%;
+  transition-duration: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign-logout svg {
+  width: 17px;
+}
+
+.sign-logout svg path {
+  fill: black;
+}
+
+/* text-logout */
+.text-logout {
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: black;
+  font-size: 0.8em;
+  font-weight: 600;
+  transition-duration: 0.3s;
+}
+.btn-logout:hover {
+  width: 125px;
+  border-radius: 40px;
+  transition-duration: 0.3s;
+}
+.btn-logout:hover .sign-logout {
+  width: 30%;
+  transition-duration: 0.3s;
+  padding-left: 20px;
+}
+
+/* hover effect button's text-logout-logout */
+.btn-logout:hover .text-logout {
+  opacity: 1;
+  width: 70%;
+  transition-duration: 0.3s;
+  padding-right: 10px;
+}
+
+/* button click effect*/
+.btn-logout:active {
+  transform: translate(2px, 2px);
+}
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.8
+  ); /* Ubah warna dan opasitas sesuai kebutuhan */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999; /* Pastikan lebih tinggi dari z-index elemen lain di halaman */
+}
+
+.loader {
+  height: 150px;
+  width: 50%;
+  text-align: center;
+  padding: 1em;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#loading_svg path,
+#loading_svg rect {
+  fill: #726691;
+}

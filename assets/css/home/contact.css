@@ -1,0 +1,106 @@
+.contactUs {
+  height: 100%;
+  padding: 3vh;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.box-contact {
+  margin: 5vh auto;
+  text-align: center !important;
+  width: 80vw;
+}
+
+.wrapper .button {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: left !important;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #eeedf0;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease-out;
+  color: black;
+}
+.wrapper .button .icon {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.4s ease-out;
+}
+.wrapper .button .icon i {
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.4s ease-out;
+}
+
+.logo-sponsor {
+  width: 200px;
+}
+
+@media screen and (min-width: 1024px) {
+  .contactUs {
+    margin-top: 5vh;
+  }
+  .wrapper .button:nth-child(1):hover .icon {
+    background: #4cc764;
+  }
+  .wrapper .button:nth-child(2):hover .icon {
+    background: linear-gradient(60deg, #1ebea5, #4cc764);
+  }
+  .wrapper .button:nth-child(3):hover .icon {
+    background: linear-gradient(to bottom, #c64141, #e56161);
+  }
+  .wrapper2 .button:nth-child(1):hover .icon {
+    background: linear-gradient(
+      45deg,
+      #ffde85 0%,
+      #f7792a 30%,
+      #f7504f 40%,
+      #d82b81 60%,
+      #d82b81 75%,
+      #9536c2 100%
+    );
+  }
+  .wrapper2 .button:nth-child(2):hover .icon {
+    background: black;
+  }
+  
+  .wrapper .button:hover .icon i {
+    color: #fff;
+  }
+
+  .wrapper .button:nth-child(1):hover {
+    width: 200px;
+  }
+  .wrapper .button:nth-child(2):hover {
+    width: 250px;
+  }
+  .wrapper .button:nth-child(3):hover {
+    width: 305px;
+  }
+  .wrapper2 .button:nth-child(1):hover {
+    width: 240px;
+  }
+  .wrapper2 .button:nth-child(2):hover {
+    width: 240px;
+  }
+  .wrapper .button span {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+    transition: all 0.4s ease-out;
+    width: 100px;
+  }
+  .wrapper .button span {
+    color: #333;
+  }
+}
